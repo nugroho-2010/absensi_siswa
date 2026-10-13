@@ -1,0 +1,7 @@
+:focus-visible { outline: 3px solid #6366f1; outline-offset: 2px; }
+#toast { opacity: 0; pointer-events: none; transition: opacity .2s ease; }
+#toast.show { opacity: 1; }
+.login-panel { position: relative; overflow: hidden; }
+.login-panel::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30, 27, 75, .15), rgba(30, 27, 75, .86)); pointer-events: none; }
+.login-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .58; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
